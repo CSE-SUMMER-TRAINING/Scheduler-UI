@@ -1,0 +1,11 @@
+.btnhover:hover:first-child{
+background-color: #0F73EE;
+color: #ffffff;
+}
+.btnhover:hover:not(:first-child){
+    cursor: not-allowed;
+    }
+    
+.btnhover{
+    background-color: #ffffff;
+    }
