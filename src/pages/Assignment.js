@@ -13,7 +13,7 @@ export default function Assignment() {
         <div>
             <Header assignment="المسؤول" />
             <center>
-            <div className="d-flex align-items-center justify-content-between  " style={{ margin: "50px auto 50px auto", padding: "50px", boxShadow: "0 4px 4px rgba(0, 0, 0, 0.2)", width:"70%" }}>
+            <div className="d-flex align-items-center justify-content-between  " style={{ margin: "50px auto 5 0px auto", padding: "50px", boxShadow: "0 4px 4px rgba(0, 0, 0, 0.2)", width:"70%" }}>
                 <div className="" style={{ color: "#FF1F2C", fontWeight: "500", fontFamily: "Tajawal", fontSize: "2vw" }}>
                     00:05:30:00
                 </div>
