@@ -4,7 +4,6 @@ import login from "../images/Schedule-amico.png"
 import "./Login.css"
 
 export default function Login() {
-    console.log(window.innerWidth)
     return (
         <div>
             <div className=" row  m-5 justify-content-around">
