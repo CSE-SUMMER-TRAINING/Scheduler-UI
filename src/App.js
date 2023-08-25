@@ -12,7 +12,7 @@ function App() {
 
                     <switch>
                         <Routes>
-                            <Route path="" element={<Assignment />} />
+                            <Route path="" element={<Main />} />
                         </Routes>
                     </switch>
                 </main>
