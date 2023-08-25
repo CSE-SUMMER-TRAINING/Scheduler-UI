@@ -1,11 +1,10 @@
 import React from "react";
 import "./Assignment.css";
-import Header from "./Header";
 
 const Assignment = () => {
   return (
     <div>
-      <Header assignment="مُلاحِظ"></Header>
+      <Header assignment = "مُلاحِظ"></Header>
 
       <div className="full-width-div">
         اختر ايام المراقبة والملاحظة المناسبة لك لتكليف ملاحظة الامتحانات لعام

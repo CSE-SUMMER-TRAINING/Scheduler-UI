@@ -4,8 +4,6 @@ import Login from './pages/Login';
 import NoWork from './pages/NoWork';
 import Downloadass from './pages/Downloadass';
 import Main from './pages/Main';
-import Header from './pages/Header';
-import Assignment from './pages/Assignment';
 function App() {
     return (
         <BrowserRouter>
@@ -14,7 +12,7 @@ function App() {
 
                     <switch>
                         <Routes>
-                            <Route path="" element={<Main />} />
+                            <Route path="" element={<Assignment />} />
                         </Routes>
                     </switch>
                 </main>
