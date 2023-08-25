@@ -4,7 +4,8 @@ import Login from './pages/Login';
 import NoWork from './pages/NoWork';
 import Downloadass from './pages/Downloadass';
 import Main from './pages/Main';
-import Assignment from './pages/Assignment';
+import NeedForAss from "./pages/NeedForAss";
+
 function App() {
     return (
         <BrowserRouter>
@@ -13,7 +14,7 @@ function App() {
 
                     <switch>
                         <Routes>
-                            <Route path="" element={<Assignment />} />
+                            <Route path="" element={<Main />} />
                         </Routes>
                     </switch>
                 </main>
