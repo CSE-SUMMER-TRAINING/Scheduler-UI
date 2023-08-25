@@ -5,7 +5,7 @@ import "./Login.css"
 
 export default function Login() {
     return (
-        <div dir="rtl">
+        <div class="login" dir="rtl">
             <div className=" row m-5 justify-content-around">
                 {/* for text body */}
                 <div className="col-lg-6 col-12 m-md-0 text-center" id="body-text" >

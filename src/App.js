@@ -11,16 +11,14 @@ function App() {
         <BrowserRouter>
             <div>
                 <main>
-
                     <switch>
                         <Routes>
-                            <Route path="" element={<NeedForAss />} />
+                            <Route path="" element={<NoWork />} />
                         </Routes>
                     </switch>
                 </main>
             </div>
             </BrowserRouter>
-            )
+    )
 }
-
-            export default App;
+export default App;

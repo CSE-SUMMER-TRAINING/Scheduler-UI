@@ -1,0 +1,19 @@
+.downloadass p{
+    font-family: Tajawal;
+    font-size:35px;
+    text-align: center;
+    padding: 15px;
+}
+.downloadass .container{
+    max-width:400px;
+    max-height: 400px;
+}
+.downloadass .container img{
+    cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+    .downloadass p{
+        font-size: 23px;
+        padding: 10px;
+    }
+}
