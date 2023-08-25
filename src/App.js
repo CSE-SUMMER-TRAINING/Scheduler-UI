@@ -3,6 +3,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Login from './pages/Login';
 import NoWork from './pages/NoWork';
 import Downloadass from './pages/Downloadass';
+import Main from './pages/Main';
 function App() {
     return (
         <BrowserRouter>
@@ -11,7 +12,7 @@ function App() {
 
                     <switch>
                         <Routes>
-                            <Route path="" element={<Login />} />
+                            <Route path="" element={<Main />} />
                         </Routes>
                     </switch>
                 </main>
