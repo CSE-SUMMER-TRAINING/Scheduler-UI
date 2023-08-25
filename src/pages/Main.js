@@ -7,39 +7,28 @@ import "./Main.css"
 
 export default function Main() {
     return (
-        <div>
+        <div class="parent" dir="rtl">
             <Header assignment="المسؤول" />
-            <div className="  d-flex align-items-center  " style={{ marginTop: "100px" }}>
-                <h1 style={{ fontFamily: "Tajawal", fontWeight: "700", fontSize: "3vw", marginLeft: "auto", marginRight: "auto", }}>
+            <div className="d-flex justify-content-center welcome">
+                <h1>
                     مرحباً بك
                 </h1>
             </div>
-
-            <SimpleGrid p="50px" columns={2} spacing={150}>
-                <Box >
-                    <img src={login} style={{ width: '25vw', float:"right" }} />
-
-                </Box>
-                <Box  >
-                    <div className="btn btnhover" style={{ width: "17vw", marginRight: "300px", fontSize: "1.7vw", fontFamily: "Tajawal", fontWeight: "700", boxShadow: "0 4px 4px rgba(0, 0, 0, 0.2)", float:"right"  }}>
-                        إنشاء<br />
-                        تكليف <br />
-                        المُلاحظة <br />
-                        والمُراقبة
+            <div class="container-fluid">
+                <div class="row ">
+                    <div className="col-lg-6 col-12 text-center d-flex flex-column" id="body-text" >
+                        <div className="btnhover">
+                            إنشاء تكليف المُلاحظة و المُراقبة                      
+                        </div>
+                        <div className="btnhover">
+                            توزيع الطلاب علي القاعات المُتاحة
+                        </div>
                     </div>
-                    <div className="btn btnhover mt-5" style={{ width: "17vw", marginRight: "300px", fontSize: "1.7vw", fontFamily: "Tajawal", fontWeight: "700", boxShadow: "0 4px 4px rgba(0, 0, 0, 0.2)" , float:"right"}}>
-                        توزيع<br />
-                        الطلاب علي<br />
-                        القاعات<br />
-                        المُتاحة
+                    <div className="col-lg-6 d-none d-lg-block image" id="photo">
+                        <img src={login} className="img-fluid"/>
                     </div>
-                </Box>
-            </SimpleGrid>
-
-
-
-
-
+                </div>
+            </div>
 
         </div >
     )

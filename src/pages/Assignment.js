@@ -1,13 +1,12 @@
 import React from "react";
 import "./Assignment.css";
+import Header from "./Header";
 
 const Assignment = () => {
   return (
     <div>
-      <header>
-        <h1>مراقب مبني</h1>
-        {/* <div className="header-icon"></div> */}
-      </header>
+      <Header assignment="مُلاحِظ"></Header>
+
       <div className="full-width-div">
         اختر ايام المراقبة والملاحظة المناسبة لك لتكليف ملاحظة الامتحانات لعام
         2024
