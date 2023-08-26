@@ -8,19 +8,31 @@ import NeedForAss from "./pages/NeedForAss";
 import Assignment from './pages/Assignment';
 import AvailableDays from './pages/AvailableDays';
 import EnterData from './pages/EnterData';
-import AssignE from './pages/AssignE';
-
+import ShareProvider from "./ShareProvider"
 function App() {
     return (
-        <BrowserRouter>
-            
-                        <Routes>
-                            <Route path="" element={<Main />} />
-                            <Route path="/respMain" element={<Main />} />
+			<ShareProvider>
+				<BrowserRouter>
+					<Routes>
+						<Route path="" element={<Login />} />
+						<Route path="/respMain" element={<Main />} />
+					</Routes>
+				</BrowserRouter>
+			</ShareProvider>
 
-                        </Routes>
-                
-            </BrowserRouter>
-    )
+			// <ShareProvider>
+			// 	<BrowserRouter>
+			// 		<div>
+			// 			<main>
+			// 				<switch>
+			// 					<Routes>
+			// 						<Route path="" element={<Login />} />
+			// 					</Routes>
+			// 				</switch>
+			// 			</main>
+			// 		</div>
+			// 	</BrowserRouter>
+			// </ShareProvider>
+		)
 }
 export default App;
