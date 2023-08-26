@@ -7,6 +7,7 @@ import Main from './pages/Main';
 import NeedForAss from "./pages/NeedForAss";
 import Assignment  from './pages/Assignment';
 import AvailableDays from './pages/AvailableDays';
+import EnterData from './pages/EnterData';
 
 function App() {
     return (
@@ -15,7 +16,7 @@ function App() {
                 <main>
                     <switch>
                         <Routes>
-                            <Route path="" element={<NeedForAss />} />
+                            <Route path="" element={<EnterData />} />
                         </Routes>
                     </switch>
                 </main>
