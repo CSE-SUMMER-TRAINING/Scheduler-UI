@@ -1,13 +1,18 @@
-import React from "react";
+import {React, useContext} from "react";
 import "../bootstrap/css/bootstrap.css";
 import Header from "./Header";
 import login from "../images/Schedule-amico.png"
 import { Box, SimpleGrid } from "@chakra-ui/react"
 import "./Main.css"
-
+import { UserContext } from "./Login";
+import UserState from "./UserProvider"
 export default function Main() {
+    const contextValue = useContext(UserContext);
+// const user  = UserState() 
+//     console.log(user);
     return (
         <div class="main" dir="rtl">
+
             <Header assignment="المسؤول" />
             <div className="d-flex justify-content-center welcome">
                 <h1>

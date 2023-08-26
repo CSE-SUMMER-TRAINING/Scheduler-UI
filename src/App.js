@@ -5,22 +5,20 @@ import NoWork from './pages/NoWork';
 import Downloadass from './pages/Downloadass';
 import Main from './pages/Main';
 import NeedForAss from "./pages/NeedForAss";
-import Assignment  from './pages/Assignment';
+import Assignment from './pages/Assignment';
 import AvailableDays from './pages/AvailableDays';
 
 function App() {
     return (
         <BrowserRouter>
-            <div>
-                <main>
-                    <switch>
-                        <Routes>
-                            <Route path="" element={<AvailableDays />} />
-                        </Routes>
-                    </switch>
-                </main>
-            </div>
-            </BrowserRouter>
+
+            <Routes>
+                <Route path="" element={<Login />} />
+                <Route path="/respMain" element={<Main />} />
+
+            </Routes>
+
+        </BrowserRouter>
     )
 }
 export default App;
