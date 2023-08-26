@@ -7,7 +7,7 @@ import "./Main.css"
 
 export default function Main() {
     return (
-        <div class="parent" dir="rtl">
+        <div class="main" dir="rtl">
             <Header assignment="المسؤول" />
             <div className="d-flex justify-content-center welcome">
                 <h1>

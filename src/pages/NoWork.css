@@ -1,0 +1,16 @@
+.nowork p{
+    font-family: Tajawal;
+    font-size:35px;
+    text-align: center;
+    padding: 15px;
+}
+.nowork .container.one{
+    max-width:350px;
+    max-height: 350px;
+}
+@media screen and (max-width: 576px) {
+    .nowork p{
+        font-size: 23px;
+        padding: 10px;
+    }
+}

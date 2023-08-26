@@ -1,11 +1,11 @@
-.welcome{
+.main .welcome{
     margin: 55px 55px 0;
 }
-.welcome h1{
+.main .welcome h1{
     font-size: 50px;
     font-weight: bold;
 }
-.btnhover{
+.main .btnhover{
     font-family:Tajawal;
     font-weight: bold;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -21,14 +21,14 @@
     cursor: pointer;
 }   
 
-.btnhover:hover:first-child{
+.main .btnhover:hover:first-child{
 background-color: #0F73EE;
 color: #ffffff;
 }
-.btnhover:hover:not(:first-child){
+.main .btnhover:hover:not(:first-child){
     cursor: not-allowed;
 }
     
-.btnhover{
+.main .btnhover{
     background-color: #ffffff;
 }

@@ -5,7 +5,6 @@ const Assignment = () => {
   return (
     <div>
       <Header assignment = "مُلاحِظ"></Header>
-
       <div className="full-width-div">
         اختر ايام المراقبة والملاحظة المناسبة لك لتكليف ملاحظة الامتحانات لعام
         2024
@@ -27,7 +26,6 @@ const Assignment = () => {
       <div className="circle-icon">
         <div className="arrow"></div>
       </div>
-
       <div className="warning">
         <div className="warning">
           في حالة عدم اختيار عدد الايام المطلوبة.سيتم توزيع ايام التكليف
