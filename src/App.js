@@ -5,7 +5,7 @@ import NoWork from './pages/NoWork';
 import Downloadass from './pages/Downloadass';
 import Main from './pages/Main';
 import NeedForAss from "./pages/NeedForAss";
-
+import Assignment  from './pages/Assignment';
 function App() {
     return (
         <BrowserRouter>
@@ -13,7 +13,7 @@ function App() {
                 <main>
                     <switch>
                         <Routes>
-                            <Route path="" element={<NoWork />} />
+                            <Route path="" element={<Downloadass />} />
                         </Routes>
                     </switch>
                 </main>
