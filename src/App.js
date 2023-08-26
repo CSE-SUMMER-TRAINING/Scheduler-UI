@@ -8,13 +8,14 @@ import NeedForAss from "./pages/NeedForAss";
 import Assignment from './pages/Assignment';
 import AvailableDays from './pages/AvailableDays';
 import EnterData from './pages/EnterData';
+import AssignE from './pages/AssignE';
 
 function App() {
     return (
         <BrowserRouter>
             
                         <Routes>
-                            <Route path="" element={<Login />} />
+                            <Route path="" element={<Main />} />
                             <Route path="/respMain" element={<Main />} />
 
                         </Routes>
