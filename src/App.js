@@ -7,18 +7,21 @@ import Main from './pages/Main';
 import NeedForAss from "./pages/NeedForAss";
 import Assignment from './pages/Assignment';
 import AvailableDays from './pages/AvailableDays';
+import EnterData from './pages/EnterData';
 
 function App() {
     return (
         <BrowserRouter>
-
-            <Routes>
-                <Route path="" element={<Login />} />
-                <Route path="/respMain" element={<Main />} />
-
-            </Routes>
-
-        </BrowserRouter>
+            <div>
+                <main>
+                    <switch>
+                        <Routes>
+                            <Route path="" element={<EnterData />} />
+                        </Routes>
+                    </switch>
+                </main>
+            </div>
+            </BrowserRouter>
     )
 }
 export default App;

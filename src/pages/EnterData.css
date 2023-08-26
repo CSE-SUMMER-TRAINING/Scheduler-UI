@@ -1,0 +1,103 @@
+.enterdata{
+    font-family:Tajawal;
+}
+.enterdata .welcome{
+    margin: 55px 0px;
+}
+.enterdata .welcome h1{
+    font-size: 30;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .enterdata .welcome h1{
+        font-size: 25px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .enterdata .welcome h1{
+        font-size: 20px;
+        text-align: right;
+    }
+}
+
+
+.enterdata input.inputText{
+    border-radius: 0;
+    border-width: 0px;
+    outline: none;
+    border-bottom: 3px solid #0F73EE ;
+    padding: 5px 5px 13px 5px;
+    text-align: right;
+    max-width: 400px;
+    margin-bottom: 55px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .enterdata input.inputText{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .enterdata input.inputText{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 576px) {
+    .enterdata input.inputText{
+        font-size: 17px;
+    }
+}
+
+.enterdata .full-width-div {
+    margin: 0px 0px 50px 0px;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0.3, 0.3, 0.3, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+    .enterdata .full-width-div div:first-child{
+        margin-bottom: 30px ;
+    }
+}
+
+
+.enterdata .full-width-div .fileIcon{
+    color: #0F73EE;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 576px) {
+    .enterdata .full-width-div div:first-child{
+        font-size: 22px;
+    }
+    .enterdata .full-width-div .fileIcon{
+        font-size: 30px;
+    }
+}
+
+.enterdata .button{
+    font-weight: "bold";
+    background-color: #0F73EE;
+}
+
+.enterdata input[type="submit"]{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 576px) {
+    .enterdata input[type="submit"]{
+        font-size: 20px;
+    }
+}

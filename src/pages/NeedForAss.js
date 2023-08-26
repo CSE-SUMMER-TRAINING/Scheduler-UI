@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../bootstrap/css/bootstrap.css";
 import Header from "./Header";
 import { Box, SimpleGrid, Center, useMediaQuery } from "@chakra-ui/react";
+import "./NeedForAss.css"
 
 export default function NeedForAss() {
 
@@ -13,63 +14,56 @@ export default function NeedForAss() {
     return (
         <div>
             <Header assignment="المسؤول" />
-            <center>
-                <div className="d-flex align-items-center justify-content-between  " style={{ margin: "50px auto 50px auto", padding: "50px", boxShadow: "0 4px 4px rgba(0, 0, 0, 0.2)", width: "70%" }}>
-                    <div className="" style={{ color: "#FF1F2C", fontWeight: "500", fontFamily: "Tajawal", fontSize: font? "20px" : "42px" }}>
-                        00:05:30:00
+            <div class="needforass" dir="rtl">
+                <div class="container">
+                    <div className="full-width-div row justify-content-between">
+                        <div class="col-md-8 text-md-right">
+                            تكليف مٌلاحِظة الأمتحانات لعام 2024
+                        </div>
+                        <div class="col-md-3 text-danger text-md-left">
+                            00:05:30:00
+                        </div>                        
                     </div>
-                    <div style={{ color: "#000000", fontWeight: "700", fontFamily: "Tajawal", fontSize: font? "20px" : "42px", textAlign: "right" }}>
-                        تكليف مُلاحِظة <br />
-                        الأمتحانات لعام 2024
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="crd">
+                                <div>عدد مراقبي الادوار لليوم</div>
+                                <div className="num">10</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="crd">
+                                <div>عدد المُلاحِظين لليوم</div>
+                                <div className="num">30</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="crd">
+                                <div>عدد الأيام المطلوبه للمُلاحظين</div>
+                                <div className="num">6</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="crd">
+                                <div>عدد مراقبي المباني اليوم</div>
+                                <div className="num">10</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="crd">
+                                <div>عدد الأيام المطلوبه لمراقب المبني</div>
+                                <div className="num">30</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="crd">
+                                <div>عدد الأيام المطلوبه لمراقب الدور</div>
+                                <div className="num">30</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </center>
-            <Center>
-                <SimpleGrid columns={isSmallerScreen ? 2 : 3} spacingX={"150px"} spacingY={"30px"} style={{ width: "70%" }}  >
-                    <box style={boxestyle}>
-                        عدد المُلاحِظين  <br />
-                        لليوم<br />
-                        <span
-                            style={{ color: "#0F73EE" }}
-                        >30</span>
-                    </box>
-
-                    <box style={boxestyle}>
-                        عدد مراقبي الادوار <br /> لليوم<br />
-                        <span
-                            style={{ color: "#0F73EE" }}
-                        >10</span>
-                    </box>
-
-                    <box style={boxestyle}>
-                        عدد مراقبي <br /> المباني لليوم<br />
-                        <span
-                            style={{ color: "#0F73EE" }}
-                        >10</span>
-                    </box>
-
-                    <box style={boxestyle}>
-                        عدد الأيام<br /> المطلوبه<br /> للمُلاحظين<br />
-                        <span
-                            style={{ color: "#0F73EE" }}
-                        >6</span>
-                    </box>
-
-                    <box style={boxestyle}>
-                        عدد الأيام <br />المطلوبه<br /> لمراقب الدور<br />
-                        <span
-                            style={{ color: "#0F73EE" }}
-                        >30</span>
-                    </box>
-
-                    <box style={boxestyle}>
-                        عدد الأيام<br /> المطلوبه<br /> لمراقب المبنى<br />
-                        <span
-                            style={{ color: "#0F73EE" }}
-                        >30</span>
-                    </box>
-                </SimpleGrid>
-            </Center>
+            </div>
         </div>
     )
 }
