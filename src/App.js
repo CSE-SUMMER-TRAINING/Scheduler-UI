@@ -16,6 +16,9 @@ function App() {
 					<Routes>
 						<Route path="" element={<Login />} />
 						<Route path="/respMain" element={<Main />} />
+                        <Route path="/EnterData" element={<EnterData />} />
+                        <Route path="/Assignment" element={<Assignment />} />
+                        <Route path='/AvailbleDays' element = {<AvailableDays/>}/>
 					</Routes>
 				</BrowserRouter>
 			</ShareProvider>
