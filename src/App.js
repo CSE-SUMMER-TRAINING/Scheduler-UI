@@ -13,7 +13,7 @@ function App() {
                 <main>
                     <switch>
                         <Routes>
-                            <Route path="" element={<Downloadass />} />
+                            <Route path="" element={<NoWork />} />
                         </Routes>
                     </switch>
                 </main>
