@@ -12,15 +12,13 @@ import EnterData from './pages/EnterData';
 function App() {
     return (
         <BrowserRouter>
-            <div>
-                <main>
-                    <switch>
+            
                         <Routes>
-                            <Route path="" element={<EnterData />} />
+                            <Route path="" element={<Login />} />
+                            <Route path="/respMain" element={<Main />} />
+
                         </Routes>
-                    </switch>
-                </main>
-            </div>
+                
             </BrowserRouter>
     )
 }
