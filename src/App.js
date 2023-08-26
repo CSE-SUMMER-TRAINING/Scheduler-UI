@@ -6,6 +6,8 @@ import Downloadass from './pages/Downloadass';
 import Main from './pages/Main';
 import NeedForAss from "./pages/NeedForAss";
 import Assignment  from './pages/Assignment';
+import AvailableDays from './pages/AvailableDays';
+
 function App() {
     return (
         <BrowserRouter>
@@ -13,7 +15,7 @@ function App() {
                 <main>
                     <switch>
                         <Routes>
-                            <Route path="" element={<NoWork />} />
+                            <Route path="" element={<AvailableDays />} />
                         </Routes>
                     </switch>
                 </main>

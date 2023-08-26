@@ -1,0 +1,63 @@
+.availabledays{
+    font-family:Tajawal;
+}
+.availabledays .bar{
+    margin: 35px 0px 50px;
+}
+.availabledays .time, 
+.availabledays .rem{
+    background-color: #dc3545;
+    color: white;
+    font-size: 30px;
+    padding: 2px 40px;
+    font-weight: bold;
+}
+@media screen and (max-width: 576px) {
+    .availabledays .time, 
+    .availabledays .rem{
+        padding: 2px 25px;
+        font-size: 20px;
+    }
+}
+
+.availabledays .welcome{
+    margin: 55px;
+}
+.availabledays .welcome h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+    .availabledays .welcome h1{
+        font-size: 25px;
+    }
+}
+
+.availabledays .container{
+    margin-bottom: 70px;
+}
+.availabledays .container .row .crd{
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0px;
+    box-shadow: 2px 2px 5px rgba(0.5, 0.5, 0.5, 0.5);
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.availabledays .container .row .crd:hover{
+    color: white;
+    background-color: #0F73EE;
+}
+.availabledays .container .row .crd .text{
+    font-size: 35px;
+    font-weight: bold;
+} 
+
+@media screen and (max-width: 576px) {
+    .availabledays .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
