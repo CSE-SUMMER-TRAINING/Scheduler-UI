@@ -7,8 +7,13 @@ import AvailableDays from "./AvailableDays"
 import Main from "./Main"
 import { Link } from "react-router-dom"
 import { ShareState } from "../ShareProvider"
+import Assignment from "./Assignment"
 
 export default function Login() {
+
+    const [path, setPath] = useState("");
+
+
 	const [email, setEmail] = useState()
 	const [password, setPassword] = useState()
 	const [preiorty, setPreiorty] = useState(-1)
@@ -23,6 +28,8 @@ export default function Login() {
 		console.log(data)
 
         setUser(data)
+        console.log(data.user.priority)
+
 		if (!data.token) {
 			// wrong email or password
 
@@ -60,7 +67,8 @@ export default function Login() {
 								class="btn text-light button mt-3 px-5"
 								id="btn"
 								onClick={submitHandler}
-								to="/respMain">
+                                to = {path}
+								>
 								دخول
 							</Link>
 						</form>
