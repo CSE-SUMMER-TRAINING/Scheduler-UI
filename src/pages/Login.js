@@ -18,18 +18,19 @@ export default function Login() {
 		const logData = { email, password }
 
 		console.log(logData)
-		const { data } = await axios.post("api/user/login", logData)
-        
+		const { data } = await axios.post("http://localhost:5000/api/user/login", logData)
+
+		console.log(data)
 
         setUser(data)
 		if (!data.token) {
 			// wrong email or password
-            
+
 			return
 		} else if (data.user.preiorty === 0) {
 			;<Main />
+		} else if (data.user.preiorty === 1) {
 		}
-		console.log(data)
 	}
 
 	return (

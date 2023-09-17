@@ -15,7 +15,7 @@ function App() {
 				<BrowserRouter>
 					<Routes>
 						<Route path="" element={<Login />} />
-						<Route path="/respMain" element={<Main />} />
+						<Route path="/respMain" element={<EnterData />} />
 					</Routes>
 				</BrowserRouter>
 			</ShareProvider>
