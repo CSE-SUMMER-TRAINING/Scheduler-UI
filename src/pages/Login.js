@@ -3,15 +3,15 @@ import "../bootstrap/css/bootstrap.css";
 import login from "../images/Schedule-amico.png";
 import "./Login.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ShareState } from "../ShareProvider";
 
 export default function Login() {
-	const [path, setPath] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [error, setError] = useState(null);
 	const { setUser } = ShareState();
+	const navigate = useNavigate();
 
 	const submitHandler = async () => {
 		const logData = { email, password };
@@ -26,7 +26,7 @@ export default function Login() {
 
 			// redirect
 			if (data.user.priority === 0) {
-				setPath('/main');
+				navigate('/main');
 			}
 			else if (data.user.priority === 1) {
 			}
@@ -72,7 +72,6 @@ export default function Login() {
 								className="btn text-light button mt-3 px-5"
 								id="btn"
 								onClick={submitHandler}
-								to={path}
 							> دخول </Link>
 						</form>
 					</div>

@@ -35,3 +35,7 @@ color: #ffffff;
 .main .btnhover{
     background-color: #ffffff;
 }
+
+.main a {
+    text-decoration: none;
+}
