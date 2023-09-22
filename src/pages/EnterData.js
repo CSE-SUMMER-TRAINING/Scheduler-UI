@@ -4,8 +4,9 @@ import Header from "./Header"
 import "./EnterData.css"
 import { ShareState } from "../ShareProvider"
 import axios from "axios"
+
 export default function EnterData() {
-	const { user, setUser } = ShareState()
+	const { user } = ShareState()
 	const [neededHallObservers, setNeededHallObservers] = useState()
 	const [neededFloorObservers, setNeededFloorObservers] = useState()
 	const [neededBuildingObservers, setNeededBuildingObservers] = useState()
@@ -14,7 +15,7 @@ export default function EnterData() {
 	const [buildingObserversWorkDays, setBuildingObserversWorkDays] = useState()
 	const [duration, setduration] = useState()
 	const [name, setName] = useState()
-	const [daysList, setDaysList] = useState(["11/02/2002"])
+	const [daysList, ] = useState(["11/02/2002"])
 
 	const Go = async () => {
 		const config = {
@@ -33,13 +34,13 @@ export default function EnterData() {
 			daysList,
 			duration,
 		}
+
 		const { data } = await axios.post("api/superAdmin/createVote", inData, config)
-		console.log(data)
+
 		if (data.hasVote) {
-			// ==>
+			
 		} else {
-			//<EnterData/>
-			// ==>
+			
 		}
 	}
 

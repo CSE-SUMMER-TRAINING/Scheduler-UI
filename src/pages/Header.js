@@ -1,12 +1,9 @@
 import React from "react";
 import "../bootstrap/css/bootstrap.css";
-import "./Header.css"
-import { color } from "framer-motion";
-
+import "./Header.css";
 
 export default function Header(props) {
     return (
-
         <div class="header" dir="rtl">
             <div className="d-flex align-items-center justify-content-center container-fluid" style={{ boxShadow: "0px 5px 4px 0px #00000026", height: "70px" }} >
                 <div className="col">
@@ -22,5 +19,5 @@ export default function Header(props) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
